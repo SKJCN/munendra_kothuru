@@ -1,10 +1,12 @@
 {
-  "customerName": "Reshma N",
-  "customerId": 44292,
-  "packagePlan": "Silver Plus",
-  "planAmount": 550,
+  "customerName": "Munendra P",
+  "customerId": 101576,
+  "packagePlan": "Gold Plus",
+  "planAmount": 700,
   "currency": "INR",
-  "planRenewalDate": "2026-04-15",
+  "planRenewalDate": "2026-05-04",
   "planDurationDays": 30,
-  "newConnectionDate": "2022-02-01"
+  "newConnectionDate": "2024-12-05"
+
+  
 }

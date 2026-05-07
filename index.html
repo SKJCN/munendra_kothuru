@@ -544,8 +544,8 @@ main { padding: 0 12px 50px; }
    INVOICE DATA
    Add PDF links here. Format:
    { YYYY: { "MonthName": "https://raw.githubusercontent.com/..." } }
-══════════════════════════════════════════════════════ */
-// invoiceData is built dynamically from reshma.json after fetch
+══════════════════════════════════════════════════════ */ 
+// invoiceData is built dynamically from munendra.json after fetch
 let invoiceData = {};
 
 /* ══ CLOCK ══════════════════════════════════════════════ */
@@ -732,13 +732,13 @@ function renderTable(newConnectionDate) {
   });
 }
 
-/* ══ LOAD FROM reshma.json & INIT ═══════════════════════
-   All customer fields AND invoice data come from reshma.json.
+/* ══ LOAD FROM munendra.json & INIT ═══════════════════════
+   All customer fields AND invoice data come from munendra.json.
    Invoice keys format: jan_2024_invoice, feb_2025_invoice ...
 ═══════════════════════════════════════════════════════ */
-fetch('reshma.json')
+fetch('munendra.json')
   .then(res => {
-    if (!res.ok) throw new Error('Failed to load reshma.json');
+    if (!res.ok) throw new Error('Failed to load munendra.json');
     return res.json();
   })
   .then(data => {
@@ -823,7 +823,7 @@ fetch('reshma.json')
     renderTable(data.newConnectionDate);
   })
   .catch(err => {
-    console.error('Could not load reshma.json:', err);
+    console.error('Could not load munendra.json:', err);
     document.getElementById('customerName').textContent = 'Error loading data';
     renderYearFilter(null, null);
     renderTable(null);
